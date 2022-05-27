@@ -18,11 +18,11 @@ variable "names" {
   #default="my_new_user"
 }
 
-resource "aws_iam_user" "my_iam_users" {
+/*resource "aws_iam_user" "my_iam_users" {
   #count = length(var.names)
   #name  = "my_iam_user_${count.index}"
   #name = var.names[count.index]
-  for_each = var.names
+  /*for_each = var.names
 
   name = each.key
   tags = {
@@ -30,4 +30,4 @@ resource "aws_iam_user" "my_iam_users" {
     department : each.value.department
   }
 
-}
+}*/
