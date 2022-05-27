@@ -2,10 +2,10 @@ provider "aws" {
   region  = "us-east-1"
   version = "~>4.14.0"
 }
-/*resource "aws_s3_bucket" "my_s3_bucket_1" {
+resource "aws_s3_bucket" "my_s3_bucket_1" {
   bucket = "s3-practice-tera-bucket-1"
 
-}*/
+}
 
 variable "names" {
   #default = ["ayush_user", "tom_user", "jane_user"]
