@@ -69,7 +69,7 @@ resource "aws_instance" "http_server" {
   vpc_security_group_ids = [aws_security_group.http-server-sg.id]
   subnet_id              = "subnet-0a2120a0c1d70c801"
 
-  /*connection {
+  connection {
     type        = "ssh"
     host        = self.public_ip
     user        = "ec2-user"
@@ -82,6 +82,6 @@ resource "aws_instance" "http_server" {
       "echo welcome to ayush ec2 ${self.public_dns} | sudo tee /var/www/html/index.html"
     ]
 
-  }*/
+  }
 }
 
